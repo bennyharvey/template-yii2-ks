@@ -19,3 +19,7 @@ down: ## Stop all containers
 
 ps: ## Container status
 	@docker-compose ps
+
+restart: ## Restart containers
+	@docker-compose down
+	@docker-compose up -d
