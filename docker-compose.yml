@@ -17,6 +17,10 @@ services:
     build: ./docker/php-fpm
     volumes:
       - ./:/var/www/html
+    depends_on:
+      - db
+      - nginx
+      - redis
 
   db:
     restart: always
