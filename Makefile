@@ -23,3 +23,10 @@ ps: ## Container status
 restart: ## Restart containers
 	@docker-compose down
 	@docker-compose up -d
+
+migrate: ## Apply all new migrations
+	@docker-compose run --rm php php yii migrate
+
+migrate-d: ## Roll back all migrations
+	@docker-compose run --rm php php yii migrate/down 999
+
