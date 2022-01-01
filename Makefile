@@ -8,7 +8,7 @@ help:
 install: ## Initial installation
 	@bash scripts/install.sh
 
-ash: ## Attach shell to container
+ash: ## Attach shell to php container
 	@bash scripts/ash.sh
 
 up: ## Start all containers
