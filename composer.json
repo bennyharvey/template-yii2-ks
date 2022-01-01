@@ -1,0 +1,62 @@
+{
+    "name": "bennyharvey/yii2-app-ks",
+    "description": "Yii 2 ks template",
+    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "type": "project",
+    "license": "GPLv2",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "yiisoft/yii2": "~2.0.41",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "yiisoft/yii2-redis": "^2.0",
+        "yiisoft/yii2-queue": "^2.3",
+        "yii2mod/yii2-swagger": "*",
+        "yii2mod/yii2-rbac": "*",
+        "sfedosimov/yii2-oci8pdo": "*",
+        "edvlerblog/yii2-adldap-module": "^6.0.0",
+        "imagine/imagine": "~0.5.0",
+        "2amigos/yii2-chartjs-widget" : "~2.0",
+        "2amigos/yii2-gallery-widget": "~1.0",
+        "zxbodya/yii2-gallery-manager": "*@dev",
+        "dmstr/yii2-adminlte-asset": "^2.1",
+        "squizlabs/php_codesniffer": "^3.5",
+        "sateler/yii2-changelog": "^1.0",
+        "bedezign/yii2-audit": "^1.1.2",
+        "kartik-v/yii2-grid": "dev-master",
+        "kartik-v/yii2-dynagrid": "dev-master",
+        "kartik-v/yii2-detail-view": "dev-master",
+        "kartik-v/yii2-widgets": "*",
+        "vlucas/phpdotenv": "^5.3",
+        "yiisoft/yii2-httpclient": "^2.0",
+        "yiisoft/yii2-mongodb": "^2.1"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.1.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/codeception": "^4.0",
+        "codeception/module-asserts": "^1.0",
+        "codeception/module-yii2": "^1.0",
+        "codeception/module-filesystem": "^1.0",
+        "codeception/verify": "~0.5.0 || ~1.1.0",
+        "symfony/browser-kit": ">=2.7 <=4.2.4"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sfedosimov/yii2-oci8pdo.git"
+        }
+    ]
+}
